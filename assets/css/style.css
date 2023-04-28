@@ -1,1 +1,18 @@
-.backdrop {}
+.backdrop {
+    background: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100%);
+}
+
+/* .header {
+    height: 10%;
+
+} */
+
+.chatSx {
+    width: 20%;
+    border: 1px solid gray;
+}
+
+.chatDx {
+    width: 80%;
+    border: 1px solid gray;
+}
