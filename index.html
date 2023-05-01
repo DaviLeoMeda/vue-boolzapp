@@ -65,8 +65,9 @@
                     </div>
 
                     <div id="infoChat">
-                        <div v-for=" (element, index) in contacts" :key="index" class="d-flex align-items-center">
-                            <img class="avatarImg rounded-5" :src="" alt="element.name">
+                        <div v-for=" (ele, index) in contacts" :key="index"
+                            class="d-flex align-items-center border border-secondary">
+                            <img class="avatarImg rounded-5" :src="ele.avatar" alt="ele.name">
                         </div>
 
                     </div>
