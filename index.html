@@ -56,15 +56,18 @@
                     </div>
 
                     <div class="searchArea d-flex align-items-center">
-                        <div class="input-group flex-nowrap">
+                        <div class="input-group flex-nowrap mx-2">
                             <span class="input-group-text" id="addon-wrapping"><i
                                     class="fa-solid fa-magnifying-glass"></i></span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            <input type="text" class="form-control" placeholder="Search" aria-label="search"
                                 aria-describedby="addon-wrapping">
                         </div>
                     </div>
 
                     <div id="infoChat">
+                        <div v-for=" (element, index) in contacts" :key="index" class="d-flex align-items-center">
+                            <img class="avatarImg rounded-5" :src="" alt="element.name">
+                        </div>
 
                     </div>
 

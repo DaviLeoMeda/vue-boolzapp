@@ -62,3 +62,7 @@
 #infoChat {
     height: 10%;
 }
+
+.avatarImg {
+    max-width: 50px;
+}
