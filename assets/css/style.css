@@ -8,11 +8,57 @@
 } */
 
 .chatSx {
-    width: 20%;
+    width: 30%;
     border: 1px solid gray;
 }
 
 .chatDx {
-    width: 80%;
+    width: 70%;
     border: 1px solid gray;
+}
+
+.headerChat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background-color: #a5afbd;
+}
+
+.headerChat div img {
+    width: 10%;
+
+}
+
+
+.textMyname {
+    font-size: 10px;
+}
+
+.settingI {
+    cursor: pointer;
+}
+
+.notifications {
+    height: 10%;
+    background-color: rgb(56, 141, 221);
+}
+
+.notifications i {
+    padding: 10px;
+    color: rgb(56, 141, 221);
+    background-color: #fff;
+}
+
+.notif {
+    font-size: 10px;
+}
+
+.searchArea {
+    height: 8%;
+    background-color: #a5afbd;
+}
+
+#infoChat {
+    height: 10%;
 }
