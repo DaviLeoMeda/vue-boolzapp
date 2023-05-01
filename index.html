@@ -50,7 +50,8 @@
                         <i class="fa-solid fa-bell rounded-5"></i>
                         <div>
                             <p class="notif my-0">Receive new messages notifications</p>
-                            <span class="notif text-decoration-underline text-secondary my-0">Descktop notifications
+                            <span class="notif text-decoration-underline text-warning my-0">Descktop
+                                notifications
                                 active</span>
                         </div>
                     </div>
@@ -65,9 +66,13 @@
                     </div>
 
                     <div id="infoChat">
-                        <div v-for=" (ele, index) in contacts" :key="index"
-                            class="d-flex align-items-center border border-secondary">
-                            <img class="avatarImg rounded-5" :src="ele.avatar" alt="ele.name">
+                        <div v-for=" (ele, index) in contacts" :key="index" class="d-flex align-items-center">
+                            <img class="avatarImg rounded-5 p-2" :src="ele.avatar" alt="ele.name">
+                            <div>
+                                <span>{{ ele.name }}</span>
+                                <span>{{ ele.messages.date }}</span>
+                            </div>
+
                         </div>
 
                     </div>
@@ -77,7 +82,44 @@
                 </section>
 
                 <section class="chatDx h-100">
-                    <div class="headerChat"></div>
+
+                    <div class="headerChat p-2">
+
+                        <div>
+                            <img class="rounded-5" src="./assets/img/avatar_1.jpg" alt="">
+                            <span class="text-white textMyname mx-2">Pedro Pe di Santa Fe</span>
+                        </div>
+
+                        <div class="settingI text-secondary d-flex">
+                            <i class="fa-solid fa-magnifying-glass mx-1"></i>
+                            <i class="fa-solid fa-paperclip mx-1"></i>
+                            <i class="fa-solid fa-ellipsis-vertical mx-1"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="mainChat d-flex flex-column-reverse">
+
+                    </div>
+
+                    <div class="footChat d-flex align-items-center justify-content-between p-2">
+
+                        <div>
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+
+                        <div class="chatDiv">
+                            <input class="chatSpace w-100 rounded-4" placeholder="Write your message here..."
+                                type="text">
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+
+
+                    </div>
+
 
                 </section>
 

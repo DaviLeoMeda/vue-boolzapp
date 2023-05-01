@@ -30,6 +30,17 @@
 
 }
 
+.mainChat {
+    height: 80%;
+    background-image: url(../img/mine.jpg);
+    background-size: 30%;
+}
+
+.footChat {
+    height: 10%;
+    background-color: #a5afbd;
+}
+
 
 .textMyname {
     font-size: 10px;
@@ -61,8 +72,27 @@
 
 #infoChat {
     height: 10%;
+
+}
+
+#infoChat div:hover {
+    background-color: #83ace6;
 }
 
 .avatarImg {
     max-width: 50px;
+}
+
+.chatDiv {
+    width: 80%;
+}
+
+.sent {
+    background-color: #fff;
+    align-self: flex-end;
+}
+
+.received {
+    background-color: lightgray;
+    align-self: flex-start;
 }
