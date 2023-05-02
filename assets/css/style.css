@@ -90,9 +90,13 @@
 .sent {
     background-color: #fff;
     align-self: flex-end;
+    margin: 10px 5px;
+    border-radius: 7px;
 }
 
 .received {
     background-color: lightgray;
     align-self: flex-start;
+    margin: 10px 5px;
+    border-radius: 7px;
 }
