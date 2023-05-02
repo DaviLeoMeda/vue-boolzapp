@@ -168,6 +168,7 @@ createApp({
                 }
             ],
             activeChat: 0,
+            myMessage: ''
 
         }
     },
@@ -180,6 +181,14 @@ createApp({
     methods: {
         chatSelection(i) {
             this.activeChat = i
+        },
+
+        newChat() {
+            this.contacts[this.newChatactiveChat].messages.push({
+                date: '10/01/2020 15:51:00',
+                message: this.myMessage,
+                status: 'received'
+            })
         }
 
 

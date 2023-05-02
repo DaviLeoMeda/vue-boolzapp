@@ -92,6 +92,10 @@
     align-self: flex-end;
     margin: 10px 5px;
     border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .received {
@@ -99,4 +103,21 @@
     align-self: flex-start;
     margin: 10px 5px;
     border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sent p,
+.received p {
+    padding: 8px;
+}
+
+
+
+.dateChat {
+    font-size: 8px;
+    bottom: 3px;
+    right: 3px;
 }
