@@ -166,7 +166,8 @@ createApp({
                         }
                     ],
                 }
-            ]
+            ],
+            activeChat: 0,
 
         }
     },
@@ -177,6 +178,9 @@ createApp({
 
     },
     methods: {
+        chatSelection(i) {
+            this.activeChat = i
+        }
 
 
 
